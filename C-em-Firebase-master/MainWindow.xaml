@@ -1,0 +1,23 @@
+﻿<Window x:Class="C_em_Firebase.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:C_em_Firebase"
+        mc:Ignorable="d"
+        Title="MainWindow" MinHeight="600" MinWidth="400" Height="600" Width="400">
+
+    <StackPanel Margin="32,0">
+        <ListBox Margin="16" Height="100" Name="lboItens" SelectionChanged="lboItens_SelectionChanged" >
+        </ListBox>
+        <TextBlock Margin="0,16,0,0" Text="Digite o nome do seu Produto" />
+        <TextBox Name="txtNome"></TextBox>
+        <TextBlock Margin="0,16,0,0" Text="Digite a Descrição do seu Produto" />
+        <TextBox Name="txtDesc"></TextBox>
+        <TextBlock Margin="0,16,0,0" Text="Digite o Preço do seu Produto" />
+        <TextBox Name="txtPreco"></TextBox>
+        <Button Click="btnAdd_Click" Margin="0,16,0,0" Name="btnAdd" Content="Adicionar"/>
+        <Button Click="btnRemover_Click" Margin="0,16,0,0" Name="btnRemover" Content="Remover"/>
+        <Button Click="btnEditar_Click" Margin="0,16,0,0" Name="btnEditar" Content="Editar"/>
+    </StackPanel>
+</Window>
